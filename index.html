@@ -23,11 +23,8 @@
   </head>
   <body>
     <header>
-      <nav id="navbar" class="absolute w-full top-0 left-0 z-50">
-        <div
-          id="container"
-          class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 bg-transparent text-white"
-        >
+      <nav id="navbar" class="absolute w-full bg-transparent top-0 left-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div class="flex items-center justify-between h-16">
             <div class="flex-shrink-0">
               <a href="#" class="text-2xl font-bold"
@@ -81,7 +78,7 @@
         </div>
       </nav>
 
-      <section
+      <div
         class="relative flex items-center justify-center h-165 bg-cover bg-center bg-[url(./assets/img/jumbotron-bg.jpg)]"
       >
         <div class="relative text-center z-5 text-white px-6">
@@ -89,14 +86,14 @@
             <span class="text-blue-600">Welcome</span> To Our Website
           </h1>
           <p
-            class="text-gray-300 text-md md:text-lg max-w-2xl py-3 pb-8 mx-auto"
+            class="text-gray-300 text-base md:text-lg max-w-2xl py-3 pb-8 mx-auto"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
             facere voluptas, dolorem quia esse eveniet enim dolore qui. Lorem
             ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
             minima.
           </p>
-          <div class="flex justify-center items-center gap-6">
+          <div class="flex justify-center items-center gap-4 md:gap-6">
             <a
               href="#"
               class="px-8 py-3 font-semibold bg-blue-700 hover:bg-blue-600 rounded-full duration-300 ease-out"
@@ -113,7 +110,50 @@
         <div
           class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/65 to-transparent"
         ></div>
-      </section>
+      </div>
+
+      <div
+        class="relative max-w-4xl mx-8 md:mx-auto -mt-13 md:-mt-18 bg-white h-auto rounded-md shadow-xl"
+      >
+        <div class="flex flex-col md:flex-row p-8 gap-12">
+          <div class="flex gap-4">
+            <img
+              src="./assets/img/employee.png"
+              alt="employee"
+              width="80"
+              height="80"
+            />
+            <div class="flex flex-col">
+              <h4 class="text-md font-bold uppercase">24 Hours</h4>
+              <p class="font-extralight">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <img
+              src="./assets/img/hires.png"
+              alt="High-Res"
+              width="80"
+              height="80"
+            />
+            <div class="flex flex-col">
+              <h4 class="text-md font-bold uppercase">High Res</h4>
+              <p class="font-extralight">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <img
+              src="./assets/img/security.png"
+              alt="security"
+              width="80"
+              height="80"
+            />
+            <div class="flex flex-col">
+              <h4 class="text-md font-bold uppercase">Security</h4>
+              <p class="font-extralight">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>

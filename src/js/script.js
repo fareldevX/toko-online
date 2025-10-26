@@ -1,5 +1,4 @@
 const navbar = document.getElementById("navbar");
-const contNavMain = document.getElementById("container");
 const btn = document.getElementById("btn");
 const isMobile = document.getElementById("isMobile");
 
@@ -7,8 +6,8 @@ window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     navbar.classList.add("fixed");
     navbar.classList.remove("absolute");
-    contNavMain.classList.add("backdrop-blur-md", "bg-white/30", "shadow-md");
-    contNavMain.classList.remove("bg-transparent");
+    navbar.classList.add("backdrop-blur-md", "bg-white/30", "shadow-md");
+    navbar.classList.remove("bg-transparent");
   } else {
     if (!isMobile.classList.contains("hidden")) {
       return isMobile.classList.add("hidden");
@@ -16,12 +15,8 @@ window.addEventListener("scroll", () => {
 
     navbar.classList.remove("fixed");
     navbar.classList.add("absolute");
-    contNavMain.classList.remove(
-      "backdrop-blur-md",
-      "bg-white/30",
-      "shadow-md"
-    );
-    contNavMain.classList.add("bg-transparent");
+    navbar.classList.remove("backdrop-blur-md", "bg-white/30", "shadow-md");
+    navbar.classList.add("bg-transparent");
   }
 });
 
