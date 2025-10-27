@@ -23,7 +23,10 @@
   </head>
   <body>
     <header>
-      <nav id="navbar" class="absolute w-full bg-transparent top-0 left-0 z-50">
+      <nav
+        id="navbar"
+        class="absolute w-full bg-transparent top-0 left-0 z-50 transform transition-all duration-300 ease-in-out"
+      >
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div class="flex items-center justify-between h-16">
             <div class="flex-shrink-0">
@@ -36,7 +39,9 @@
               <a href="#" class="hover:text-blue-500 duration-300 ease-out"
                 >Home</a
               >
-              <a href="#" class="hover:text-blue-500 duration-300 ease-out"
+              <a
+                href="#about-our"
+                class="hover:text-blue-500 duration-300 ease-out"
                 >About</a
               >
               <a href="#" class="hover:text-blue-500 duration-300 ease-out"
@@ -64,7 +69,9 @@
               <a href="#" class="hover:text-blue-500 duration-300 ease-out"
                 >Home</a
               >
-              <a href="#" class="hover:text-blue-500 duration-300 ease-out"
+              <a
+                href="#about-our"
+                class="hover:text-blue-500 duration-300 ease-out"
                 >About</a
               >
               <a href="#" class="hover:text-blue-500 duration-300 ease-out"
@@ -157,7 +164,32 @@
     </header>
 
     <main>
-      <section class="h-1000"></section>
+      <section id="about-our" class="h-full py-14 md:py-42">
+        <div class="max-w-5xl mx-auto p-8 md:p-4">
+          <h2 class="text-xl font-bold uppercase p-4">About Our</h2>
+          <div class="md:flex md:items-center gap-18">
+            <div>
+              <img src="./assets/img/workingspace.png" alt="Product" />
+            </div>
+
+            <div class="py-8">
+              <h3 class="text-4xl md:text-5xl uppercase font-extralight">
+                You <span class="font-bold">Work</span> Like At
+                <span class="font-bold">Home</span>
+              </h3>
+              <p class="font-extralight py-8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+                ex incidunt quis saepe.
+              </p>
+              <button class="bg-blue-600 text-white py-2 px-8 rounded-full">
+                Gallery
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="product" class="h-1000"></section>
     </main>
 
     <script src="./src/js/script.js"></script>
