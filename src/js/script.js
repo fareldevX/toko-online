@@ -10,13 +10,14 @@ window.addEventListener("scroll", () => {
   }
 
   if (scrollY > 50) {
-    navbar.classList.remove("-translate-y-10", "opacity-0");
+    navbar.classList.remove("-translate-y-10", "opacity-0", "text-white");
     navbar.classList.add(
       "-translate-y-0",
       "opacity-100",
       "fixed",
       "backdrop-blur-md",
       "bg-white/30",
+      "text-black",
       "shadow-md"
     );
     navbar.classList.remove("absolute", "bg-transparent");
@@ -31,13 +32,15 @@ window.addEventListener("scroll", () => {
       "opacity-0",
       "backdrop-blur-md",
       "bg-white/30",
+      "text-black",
       "shadow-md"
     );
     navbar.classList.add(
       "-translate-y-0",
       "opacity-100",
       "absolute",
-      "bg-transparent"
+      "bg-transparent",
+      "text-white"
     );
   }
 });
