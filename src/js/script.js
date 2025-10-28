@@ -56,7 +56,7 @@ btn.addEventListener("click", () => {
 
   const links = isMobile.querySelectorAll("a");
   links.forEach((link) => {
-    link.addEventListener("click", () => hideMobileMenu);
+    link.addEventListener("click", () => hideMobileMenu());
   });
 });
 
