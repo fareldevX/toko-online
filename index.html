@@ -49,7 +49,9 @@
                 class="hover:text-blue-500 duration-300 ease-out"
                 >Product</a
               >
-              <a href="#" class="hover:text-blue-500 duration-300 ease-out"
+              <a
+                href="#contact"
+                class="hover:text-blue-500 duration-300 ease-out"
                 >Contact</a
               >
             </div>
@@ -81,7 +83,9 @@
                 class="hover:text-blue-500 duration-300 ease-out"
                 >Product</a
               >
-              <a href="#" class="hover:text-blue-500 duration-300 ease-out"
+              <a
+                href="#contact"
+                class="hover:text-blue-500 duration-300 ease-out"
                 >Contact</a
               >
             </div>
@@ -196,7 +200,7 @@
         </div>
       </section>
 
-      <section id="product" class="h-full -mt-12">
+      <section id="product" class="h-full py-14 -my-12 bg-[#E6E6FA]">
         <div class="max-w-5xl mx-auto p-8">
           <h2 class="text-xl text-right font-bold uppercase p-4">
             Our product
@@ -253,44 +257,56 @@
         </div>
       </section>
 
-      <section id="contact" class="h-full bg-[#666666]">
+      <section id="contact" class="h-full pt-36 pb-32">
         <div class="max-w-5xl mx-auto">
-          <div class="flex flex-col sm:flex-row p-8 gap-8 md:gap-18 text-white">
-            <div class="p-2">
-              <img src="./assets/img/workingspace.png" alt="..." />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-                blanditiis, assumenda praesentium deleniti rerum perferendis.
+          <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+              <h2 class="text-xl font-bold uppercase p-4">Contact Us</h2>
+              <p class="text-md text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam cum, ipsam voluptatum perferendis ratione?
               </p>
             </div>
-            <form class="p-4">
-              <div class="flex flex-col my-2 gap-2">
+          </div>
+
+          <div class="w-full flex flex-col md:flex-row justify-center gap-32">
+            <form class="w-full">
+              <div class="w-full px-4 mb-8">
                 <label for="name">Name</label>
                 <input
-                  id="name"
                   type="text"
-                  class="text-xl border-b-2 outline-none p-2"
+                  id="name"
+                  class="w-full bg-slate-200 p-3 text-black rounded-md focus:outline-none focus:ring-blue-500 focus:ring-2 focus:border-blue-500"
                 />
               </div>
-              <div class="flex flex-col my-2 gap-2">
+              <div class="w-full px-4 mb-8">
                 <label for="email">Email</label>
                 <input
-                  id="email"
                   type="email"
-                  class="text-xl border-b-2 outline-none p-2"
+                  id="email"
+                  class="w-full bg-slate-200 p-3 text-black rounded-md focus:outline-none focus:ring-blue-500 focus:ring-2 focus:border-blue-500"
                 />
               </div>
-              <div class="flex flex-col my-2 gap-6">
-                <label for="message">Message</label>
+              <div class="w-full px-4 mb-8">
+                <label for="email">Message</label>
                 <textarea
-                  class="text-xl border-2 outline-none p-2"
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="3"
+                  id="email"
+                  class="w-full bg-slate-200 p-3 text-black rounded-md focus:outline-none focus:ring-blue-500 focus:ring-2 focus:border-blue-500 h-32 md:h-26"
                 ></textarea>
               </div>
+              <div class="w-full px-4">
+                <button
+                  class="w-full md:w-[8em] bg-blue-600 text-md text-white py-3 rounded-full hover:bg-blue-500 cursor-pointer duration-300 ease"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </div>
             </form>
+
+            <div class="hidden md:block w-full pt-6">
+              <img src="./assets/img/workingspace.png" alt="Product" />
+            </div>
           </div>
         </div>
       </section>
