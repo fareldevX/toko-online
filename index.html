@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style type="text/tailwindcss">
+      @theme {
+        --font-poppins: Poppins, sans-serif;
+        --color-primary: #10b981;
+        --color-accent: #34d399;
+        --color-background: #f0fdf4;
+        --color-surface: #ffffff;
+        --color-dark: #064e3b;
+        --color-secondary: #6b7280;
+        --color-hover: #059669;
+      }
+    </style>
+
+    <title>Toko Online Kita</title>
+  </head>
+  <body class="font-poppins bg-background">
+    <header>
+      <nav
+        id="navbar"
+        class="absolute w-full text-white bg-transparent top-0 left-0 z-50 transform transition-all duration-300 ease-in-out"
+      >
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex-shrink-0">
+              <a href="#" class="text-2xl font-bold"
+                >Toko<span class="text-primary">Online</span></a
+              >
+            </div>
+
+            <div class="hidden md:flex md:items-center md:space-x-6">
+              <a
+                href="#"
+                class="font-medium hover:text-blue-500 duration-300 ease-out"
+                >Home</a
+              >
+              <a
+                href="#about-our"
+                class="font-medium hover:text-blue-500 duration-300 ease-out"
+                >About</a
+              >
+              <a
+                href="#product"
+                class="font-medium hover:text-blue-500 duration-300 ease-out"
+                >Product</a
+              >
+              <a
+                href="#contact"
+                class="font-medium hover:text-blue-500 duration-300 ease-out"
+                >Contact</a
+              >
+            </div>
+
+            <button
+              id="btn"
+              class="md:hidden text-2xl cursor-pointer focus:outline-none"
+            >
+              <i id="bars" class="fa-solid fa-bars"></i>
+              <p class="hidden">bars</p>
+            </button>
+          </div>
+
+          <div
+            id="isMobile"
+            class="hidden text-dark bg-white shadow-md absolute top-18 right-8 w-60 transform -translate-y-5 opacity-0 transition-all duration-300 ease-in-out z-10"
+          >
+            <div class="flex flex-col items-center py-6 gap-6">
+              <a href="#" class="hover:text-hover duration-300 ease-out"
+                >Home</a
+              >
+              <a
+                href="#about-our"
+                class="hover:text-hover duration-300 ease-out"
+                >About</a
+              >
+              <a href="#product" class="hover:text-hover duration-300 ease-out"
+                >Product</a
+              >
+              <a href="#contact" class="hover:text-hover duration-300 ease-out"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="relative flex items-center justify-center h-165 bg-cover bg-center bg-[url(./assets/img/jumbotron-bg.jpg)]"
+      >
+        <div class="text-white text-shadow-md md:text-center px-8 md:px-4 z-5">
+          <h1
+            class="text-4xl md:text-5xl lg:max-w-5xl font-extrabold uppercase pb-4"
+          >
+            <span class="text-accent">Welcome</span> To Our
+            <span class="text-accent">Website</span>, build us with colorful
+            Experience.
+          </h1>
+          <p
+            class="text-gray-300 text-base md:text-lg md:max-w-2xl md:mx-auto font-light pb-8"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            facere voluptas, dolorem quia esse eveniet enim dolore qui. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+            minima.
+          </p>
+          <div class="flex items-center md:justify-center gap-4 md:gap-6">
+            <a
+              href="#product"
+              class="px-4 py-2 md:px-8 md:py-3 outline-2 outline-primary bg-primary hover:bg-hover hover:scale-103 rounded-lg duration-300 ease-out"
+              >View Product</a
+            >
+            <a
+              href="#contact"
+              class="px-4 py-2 md:px-8 md:py-3 outline-2 outline-primary hover:scale-103 rounded-lg duration-300 ease-out cursor-default"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/65 to-transparent"
+        ></div>
+      </div>
+
+      <div
+        class="relative max-w-4xl mx-8 md:mx-auto -mt-13 md:-mt-18 bg-background text-dark h-auto rounded-md shadow-xl"
+      >
+        <div class="flex flex-col md:flex-row p-6 gap-8 md:gap-12">
+          <div class="flex gap-4">
+            <img
+              src="./assets/img/employee.png"
+              alt="employee"
+              width="80"
+              height="80"
+            />
+            <div class="flex flex-col">
+              <h4 class="text-md font-bold uppercase">24 Hours</h4>
+              <p class="font-extralight text-secondary">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <img
+              src="./assets/img/hires.png"
+              alt="High-Res"
+              width="80"
+              height="80"
+            />
+            <div class="flex flex-col">
+              <h4 class="text-md font-bold uppercase">High Res</h4>
+              <p class="font-extralight text-secondary">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <img
+              src="./assets/img/security.png"
+              alt="security"
+              width="80"
+              height="80"
+            />
+            <div class="flex flex-col">
+              <h4 class="text-md font-bold uppercase">Security</h4>
+              <p class="font-extralight text-secondary">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about-our" class="h-full py-14 md:py-38">
+        <div class="max-w-5xl mx-auto text-dark p-8 md:p-4">
+          <h2 class="text-xl font-bold uppercase p-4">About Our</h2>
+          <div class="sm:flex sm:items-center gap-18">
+            <div>
+              <img src="./assets/img/workingspace.png" alt="Product" />
+            </div>
+
+            <div class="py-8">
+              <h3 class="text-4xl md:text-5xl uppercase font-thin">
+                You <span class="font-bold text-accent">Work</span> Like At
+                <span class="font-bold text-accent">Home</span>
+              </h3>
+              <p
+                class="text-secondary text-base font-light py-8 sm:py-4 md:py-8"
+              >
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+                ex incidunt quis saepe.
+              </p>
+              <button
+                class="bg-primary text-white py-2 px-8 rounded-full hover:bg-hover duration-300 ease-out cursor-pointer"
+              >
+                Gallery
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="product" class="h-full py-14 -my-12 bg-emerald-100">
+        <div class="max-w-5xl mx-auto p-8">
+          <h2 class="text-xl text-right text-dark font-bold uppercase p-4">
+            Our product
+          </h2>
+          <div
+            id="contCard"
+            class="w-full flex flex-col sm:flex-row gap-8 md:gap-6 lg:gap-10"
+          ></div>
+        </div>
+      </section>
+
+      <section id="contact" class="h-full py-30">
+        <div class="max-w-5xl mx-auto">
+          <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+              <h2 class="text-xl font-bold uppercase p-4">Contact Us</h2>
+              <p class="text-base text-secondary font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam cum, ipsam voluptatum perferendis ratione?
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full flex flex-col md:flex-row justify-center gap-32">
+            <form class="w-full text-dark">
+              <div class="w-full px-4 mb-8">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full bg-slate-200 p-3 text-black rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary"
+                />
+              </div>
+              <div class="w-full px-4 mb-8">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full bg-slate-200 p-3 text-black rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary"
+                />
+              </div>
+              <div class="w-full px-4 mb-8">
+                <label for="email">Message</label>
+                <textarea
+                  id="email"
+                  class="w-full bg-slate-200 p-3 text-black rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary h-32 md:h-26"
+                ></textarea>
+              </div>
+              <div class="w-full px-4">
+                <button
+                  class="w-full md:w-[8em] bg-primary text-md text-white py-3 rounded-full hover:bg-hover cursor-pointer duration-300 ease-out"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+
+            <div class="hidden md:block w-full pt-6">
+              <img src="./assets/img/workingspace.png" alt="Product" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark pt-32 pb-12">
+      <div class="max-w-5xl mx-auto text-slate-300">
+        <div class="flex flex-col md:flex-row md:gap-22">
+          <div class="px-4 mb-12">
+            <h2 class="font-bold text-4xl mb-6">TokoOnline</h2>
+            <h3 class="font-semibold text-2xl mb-2">Contact Us</h3>
+            <p class="font-medium text-base">Jl. setiabudi RT/RW 24/05</p>
+            <p>Jakarta</p>
+          </div>
+          <div class="px-4 mb-12">
+            <h3 class="font-semibold text-2xl mb-2">Reference</h3>
+            <div class="flex flex-col">
+              <a href="#" class="hover:text-hover mb-1">Youtube</a>
+              <a href="#" class="hover:text-hover mb-1">Tiktok</a>
+              <a href="#" class="hover:text-hover mb-1">Instagram</a>
+            </div>
+          </div>
+          <div class="px-4 mb-12">
+            <h3 class="font-semibold text-2xl mb-2">Links</h3>
+            <div class="flex flex-col">
+              <a href="#" class="hover:text-hover mb-1">Home</a>
+              <a href="#about-our" class="hover:text-hover mb-1">About</a>
+              <a href="#product" class="hover:text-hover mb-1">Product</a>
+              <a href="#contact" class="hover:text-hover mb-1">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 border-t border-emerald-700">
+          <div class="flex items-center justify-center pt-12 pb-3 gap-4">
+            <a href="#" class="hover:opacity-80" title="icon">
+              <i class="fa-brands fa-instagram text-2xl"></i>
+            </a>
+            <a href="#" class="hover:opacity-80" title="icon">
+              <i class="fa-brands fa-tiktok text-2xl"></i>
+            </a>
+            <a href="#" class="hover:opacity-80" title="icon">
+              <i class="fa-brands fa-youtube text-2xl"></i>
+            </a>
+            <a href="#" class="hover:opacity-80" title="icon">
+              <i class="fa-brands fa-github text-2xl"></i>
+            </a>
+          </div>
+
+          <p class="text-center text-xs">
+            made by us with <span class="text-pink-300">❤️</span> using
+            <a
+              href="https://tailwindcss.com"
+              target="_blank"
+              rel="noopener"
+              class="text-sky-300 hover:opacity-80"
+              >tailwindcss</a
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
