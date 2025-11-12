@@ -81,7 +81,12 @@ const hideMobileMenu = () => {
 
 window.onload = async () => {
   const data = await fetch(
-    "https://toko-online-backend-ten.vercel.app/api/product"
+    "https://toko-online-backend-ten.vercel.app/api/product",
+    {
+      headers: {
+        "x-api-key": "api_f6eb3b506dff738e01d3cfb8",
+      },
+    }
   );
   const products = await data.json();
 
