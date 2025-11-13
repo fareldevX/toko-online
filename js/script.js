@@ -4,6 +4,7 @@ const navbar = document.getElementById("navbar");
 const btn = document.getElementById("btn");
 const isMobile = document.getElementById("isMobile");
 const contCard = document.getElementById("contCard");
+const form = document.getElementById("contactForm");
 
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
@@ -117,3 +118,29 @@ window.onload = async () => {
 
   // renderProducts(products, document.getElementById("contCard"));
 };
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const success = document.getElementById("successMsg");
+
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+  };
+
+  const res = await fetch("http://localhost:3000/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  const result = await res.json();
+  if (result) {
+    success.classList.remove("hidden");
+
+    setTimeout(() => {
+      success.classList.add("hidden");
+    }, 3000);
+  }
+});

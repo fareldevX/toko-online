@@ -48,22 +48,22 @@
             <div class="hidden md:flex md:items-center md:space-x-6">
               <a
                 href="#"
-                class="font-medium hover:text-blue-500 duration-300 ease-out"
+                class="font-medium hover:text-hover duration-300 ease-out"
                 >Home</a
               >
               <a
                 href="#about-our"
-                class="font-medium hover:text-blue-500 duration-300 ease-out"
+                class="font-medium hover:text-hover duration-300 ease-out"
                 >About</a
               >
               <a
                 href="#product"
-                class="font-medium hover:text-blue-500 duration-300 ease-out"
+                class="font-medium hover:text-hover duration-300 ease-out"
                 >Product</a
               >
               <a
                 href="#contact"
-                class="font-medium hover:text-blue-500 duration-300 ease-out"
+                class="font-medium hover:text-hover duration-300 ease-out"
                 >Contact</a
               >
             </div>
@@ -244,12 +244,13 @@
           </div>
 
           <div class="w-full flex flex-col md:flex-row justify-center gap-32">
-            <form class="w-full text-dark">
+            <form id="contactForm" class="w-full text-dark">
               <div class="w-full px-4 mb-8">
                 <label for="name">Name</label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   class="w-full bg-slate-200 p-3 text-black rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary"
                 />
               </div>
@@ -258,13 +259,15 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   class="w-full bg-slate-200 p-3 text-black rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary"
                 />
               </div>
               <div class="w-full px-4 mb-8">
-                <label for="email">Message</label>
+                <label for="message">Message</label>
                 <textarea
-                  id="email"
+                  id="message"
+                  name="message"
                   class="w-full bg-slate-200 p-3 text-black rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary h-32 md:h-26"
                 ></textarea>
               </div>
@@ -275,6 +278,12 @@
                 >
                   Send
                 </button>
+                <p
+                  id="successMsg"
+                  class="bg-accent/30 text-accent text-center md:text-left p-4 mt-4 hidden"
+                >
+                  Successfully send!
+                </p>
               </div>
             </form>
 
